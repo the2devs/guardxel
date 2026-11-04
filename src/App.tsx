@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { ChevronRight, Hexagon, ShieldCheck } from 'lucide-react'
 
-const VIDEO_SRC = '/screen_guard.mp4'
+const VIDEO_SRC = `${import.meta.env.BASE_URL}screen_guard.mp4`
 
 function useReveal<T extends HTMLElement>() {
   const ref = useRef<T>(null)
